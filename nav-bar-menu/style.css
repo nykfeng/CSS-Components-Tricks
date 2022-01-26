@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  background-color: #f7f7f7;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #2a4656;
+  font-size: 20px;
+}
+
+.nav ul {
+  display: block;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.nav ul li {
+  display: inline-block;
+
+  cursor: pointer;
+  position: relative;
+  padding: 35px;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.nav ul li:active,
+.nav ul li:hover {
+  text-decoration: underline;
+}
+
+.nav .sub-menu {
+  display: none;
+
+  position: absolute;
+  left: -10%;
+  top: 75px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav .sub-menu-2 {
+  left: 0;
+}
+
+.nav .sub-menu li {
+  background-color: whitesmoke;
+  border-top: 1px solid rgb(201, 201, 201);
+  border-left: 1px solid rgb(201, 201, 201);
+  border-right: 1px solid rgb(201, 201, 201);
+  margin: 0;
+  display: block;
+  white-space: nowrap;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.nav .sub-menu li:last-child {
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.nav .sub-menu li:hover {
+  color: #ffffff;
+  background-color: #fa9a38;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.nav ul li:hover .sub-menu {
+  display: inline-block;
+}
